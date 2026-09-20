@@ -69,7 +69,7 @@ const dateLine = computed(() => {
   return `${weekdays[now.getDay()]} · ${now.getMonth() + 1}月${now.getDate()}日`
 })
 const pageTitle = computed(() => ({
-  home: '今天，去哪里？', journal: '我的手账', map: '世界足迹', memories: '时光精选', profile: '个人空间'
+  home: '今天，去哪里？(Git实验版)', journal: '我的手账', map: '世界足迹', memories: '时光精选', profile: '个人空间'
 }[activePage.value]))
 
 let toastTimer
