@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env.local
+backend/.env
+backend/data/
+backend/uploads/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.codex_tmp_report/ 
+~$*.docx

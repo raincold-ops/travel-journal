@@ -1,0 +1,21 @@
+{
+  "name": "travel01",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n WEB,API -c cyan,green \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "vite",
+    "dev:api": "conda run --no-capture-output -n trip python -m uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8001",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "concurrently": "latest",
+    "lucide-vue-next": "latest",
+    "vite": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {}
+}
